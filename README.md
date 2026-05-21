@@ -19,7 +19,7 @@ organizations.
 
 ## Current Goals
 
-- [ ] Build PDF ingestion pipeline
+- [x] Build PDF ingestion pipeline
 - [ ] Create document chunking and preprocessing scheme
 - [ ] Implement embedding generation
 - [ ] Train dual-encoder retrieval models
