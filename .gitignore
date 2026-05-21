@@ -10,3 +10,4 @@ data/
 *.pt
 *.pth
 logs/
+.ruff_cache/
