@@ -1,58 +1,47 @@
 # Distributed Scientific Retrieval System
 
-Production-oriented multimodal retrieval infrastructure for scientific documents built with 
+Multimodal retrieval infrastructure for scientific documents built with 
 PyTorch.
 
 ## Overview
 
 This project implements a scalable semantic retrieval system capable of:
 
-- ingesting large collections of scientific PDFs
+- ingesting collections of scientific PDFs
 - extracting and processing document content
-- training dense retrieval models with PyTorch
+- training retrieval models with PyTorch
 - performing hybrid semantic + keyword search
 - serving low-latency retrieval APIs
 - supporting distributed training and inference workflows
 
-This is designed to emulate real-word ML engineering and retrieval infrastructure used in modern AI 
-organizations.
-
 ## Current Goals
 
 - [x] Build PDF ingestion pipeline
-- [ ] Create document chunking and preprocessing scheme
-- [ ] Implement embedding generation
+- [x] Create document chunking and preprocessing scheme
+- [x] Implement embedding generation
 - [ ] Train dual-encoder retrieval models
 - [ ] Add reranking pipeline
 - [ ] Deploy scalable API
 - [ ] Optimize inference latency
 - [ ] Add monitoring
 
-## Planned Architecture
+## Architecture
 
 ```text
 PDF Documents
-    ↓
 Ingestion Pipeline
-    ↓
 OCR + Metadata Extraction
-    ↓
 Chunking + Cleaning
-    ↓
 Embedding Generation
-    ↓
 Vector Indexing
-    ↓
 Hybrid Retrieval
-    ↓
 Reranking
-    ↓
 Inference API
 ```
 
 ---
 
-## Repository Structure
+## Repo Structure
 
 ```text
 src/
@@ -74,7 +63,7 @@ docs/
 
 ## Tech Stack
 
-### ML / Training
+### ML
 - PyTorch
 - Transformers
 - FAISS
@@ -94,9 +83,9 @@ docs/
 
 ---
 
-## Development Setup
+## Setup
 
-### Create Environment
+### Environment
 
 ```bash
 uv venv
@@ -125,11 +114,7 @@ ruff check .
 
 ## Motivation
 
-Most public ML projects focus exclusively on model training.
-
-This project focuses on the broader engineering challenges involved in building production-grade ML retrieval 
-systems:
-
+Most public ML projects focus on model training. This project focuses on engineering challenges involved in building production-grade ML retrieval systems:
 - data ingestion
 - distributed training
 - inference optimization
@@ -137,9 +122,3 @@ systems:
 - observability
 - evaluation pipelines
 - scalability
-
----
-
-## Status
-
-Early development.
